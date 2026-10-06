@@ -14,13 +14,16 @@ Ex:
 
 
   function criarPokemon( nome, tipo, nivel, hp){
-    this.nome = nome;
-    this.tipo = tipo;
-    this.nivel = nivel;
-    this.hp =hp;
-    return this.pokemon
+    
+    return { 
+      nome : nome,
+      tipo : tipo,
+      nivel : nivel,
+      hp : hp,
+    }
+    
   }
 
 
-  const meuPokemon = new criarPokemon("a","b", 67, 90);
+  const meuPokemon = criarPokemon("a","b", 67, 90);
   console.log(meuPokemon);
